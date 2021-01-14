@@ -868,6 +868,7 @@ __attribute__ ((format (printf, 1, 2)))
 		bool IsAutoSave();
 		Ref<Snapshot> GetFirstParent();
 		std::vector<Ref<Snapshot>> GetParents();
+		std::vector<Ref<Snapshot>> GetChildren();
 		DataBuffer GetFileContents();
 		DataBuffer GetFileContentsHash();
 		std::vector<UndoEntry> GetUndoEntries();

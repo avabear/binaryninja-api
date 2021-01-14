@@ -2736,6 +2736,7 @@ __attribute__ ((format (printf, 1, 2)))
 	BINARYNINJACOREAPI int64_t BNGetSnapshotId(BNSnapshot* snapshot);
 	BINARYNINJACOREAPI BNSnapshot* BNGetSnapshotFirstParent(BNSnapshot* snapshot);
 	BINARYNINJACOREAPI BNSnapshot** BNGetSnapshotParents(BNSnapshot* snapshot, size_t* count);
+	BINARYNINJACOREAPI BNSnapshot** BNGetSnapshotChildren(BNSnapshot* snapshot, size_t* count);
 	BINARYNINJACOREAPI char* BNGetSnapshotName(BNSnapshot* snapshot);
 	BINARYNINJACOREAPI bool BNIsSnapshotAutoSave(BNSnapshot* snapshot);
 	BINARYNINJACOREAPI BNDataBuffer* BNGetSnapshotFileContents(BNSnapshot* snapshot);
